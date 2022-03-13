@@ -1,0 +1,16 @@
+xfschain2022/03/14 - 00:14:41.777	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/initialize/router.go:68	router register success
+xfschain2022/03/14 - 00:14:41.777	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/core/server.go:24	server run success on 	{"address": ":9800"}
+xfschain2022/03/14 - 00:18:23.469	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/initialize/router.go:68	router register success
+xfschain2022/03/14 - 00:18:23.469	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/core/server.go:24	server run success on 	{"address": ":9800"}
+xfschain2022/03/14 - 00:19:17.725	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/initialize/router.go:68	router register success
+xfschain2022/03/14 - 00:19:17.725	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/core/server.go:24	server run success on 	{"address": ":9800"}
+xfschain2022/03/14 - 00:19:48.505	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/initialize/router.go:68	router register success
+xfschain2022/03/14 - 00:19:48.506	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/core/server.go:24	server run success on 	{"address": ":9800"}
+xfschain2022/03/14 - 00:21:22.884	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/initialize/router.go:68	router register success
+xfschain2022/03/14 - 00:21:22.885	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/core/server.go:24	server run success on 	{"address": ":9800"}
+xfschain2022/03/14 - 00:22:51.224	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/initialize/router.go:68	router register success
+xfschain2022/03/14 - 00:22:51.224	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/core/server.go:24	server run success on 	{"address": ":9800"}
+xfschain2022/03/14 - 00:25:19.332	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/initialize/router.go:68	router register success
+xfschain2022/03/14 - 00:25:19.332	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/core/server.go:24	server run success on 	{"address": ":9800"}
+xfschain2022/03/14 - 00:26:14.524	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/initialize/router.go:68	router register success
+xfschain2022/03/14 - 00:26:14.525	[34minfo[0m	/Users/lanyuanbert/go/src/mi/mi/core/server.go:24	server run success on 	{"address": ":9800"}

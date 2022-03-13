@@ -1,0 +1,5 @@
+xfschain2022/03/14 - 00:17:12.264	[31merror[0m	/Users/lanyuanbert/go/src/mi/mi/tcpserve/handle.go:90	timeout session iccid:2817228206 time:2022-03-14 00:17:12.26403 +0800 CST m=+150.669558578
+xfschain2022/03/14 - 00:17:12.267	[31merror[0m	/Users/lanyuanbert/go/src/mi/mi/tcpserve/handle.go:90	timeout session iccid:2817228206 time:2022-03-14 00:17:10.114443 +0800 CST m=+148.520034997
+xfschain2022/03/14 - 00:20:20.218	[31merror[0m	/Users/lanyuanbert/go/src/mi/mi/tcpserve/handle.go:91	timeout session iccid:2817228206 time:2022-03-14 00:20:18.383374 +0800 CST m=+30.027840747
+xfschain2022/03/14 - 00:20:20.219	[31merror[0m	/Users/lanyuanbert/go/src/mi/mi/tcpserve/handle.go:91	timeout session iccid:898607B9102080239016 time:2022-03-14 00:20:12.130725 +0800 CST m=+23.775375089
+xfschain2022/03/14 - 00:20:40.221	[31merror[0m	/Users/lanyuanbert/go/src/mi/mi/tcpserve/handle.go:91	timeout session iccid:898607B9102080239016 time:2022-03-14 00:20:40.22072 +0800 CST m=+51.864546040

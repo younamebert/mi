@@ -61,20 +61,17 @@ func (h *Handle) Process(conn net.Conn) error {
 			global.GVA_LOG.Warn(err.Error())
 			return fmt.Errorf("write client msg, err: %v", err)
 		}
-		// fmt.Printf("%x", result)
-		// fmt.Println(23456)
 	}
-	return nil
 }
 
 func (h *Handle) MsgBroadcastLoop() {
 	newEventSub := h.eventBus.Subscript(events.SendNoticeEvent{})
 	defer newEventSub.Unsubscribe()
 	for {
-		// time.Sleep(time.Second * 1)
 		select {
 		case e := <-newEventSub.Chan():
 			event := e.(events.SendNoticeEvent)
+			// fmt.Printf("cu:%v event:%v\n", h.iccid, event.Iccid)
 			if h.iccid == event.Iccid {
 				msg, err := h.chck(event.Data)
 				if err != nil {
@@ -93,7 +90,6 @@ func (h *Handle) MsgBroadcastLoop() {
 	}
 }
 
-// func (h *Handle)
 func (h *Handle) chck(data []byte) ([]byte, error) {
 	//验证数据是否AA开头
 	if data[0] != common.Header {
@@ -123,15 +119,8 @@ func (h *Handle) chck(data []byte) ([]byte, error) {
 		return nil, err
 	}
 	return result, nil
-
-	// if _, err := h.Conn.Write(result); err != nil {
-	// 	global.GVA_LOG.Warn(fmt.Sprintf("iccid:%v session reply error:%v", h.Iccid, err))
-	// 	h.Conn.Close()
-	// 	return
-	// }
 }
 
-// arrary("nihao"=>["nihao":1])
 func (h *Handle) work(funccode byte, data []byte) ([]byte, error) {
 	if h.iccid == "" {
 		if funccode != common.Registers {
@@ -172,7 +161,6 @@ func (h *Handle) registers(data []byte) ([]byte, error) {
 		fmt.Println(err)
 		return AddEquipmentRegistersErr, err
 	}
-	h.outTime = time.NewTimer(10 * time.Second)
 	h.iccid = iccid
 	// 写入数据库
 	return AddEquipmentRegisters, nil
@@ -180,7 +168,7 @@ func (h *Handle) registers(data []byte) ([]byte, error) {
 
 func (h *Handle) resetOutTime(msgcode byte) {
 	if msgcode != common.Pant {
-		h.outTime.Reset(20 * time.Second)
+		h.outTime.Reset(30 * time.Minute)
 	}
 }
 

@@ -1,0 +1,4 @@
+xfschain2022/03/14 - 00:17:12.267	[33mwarn[0m	/Users/lanyuanbert/go/src/mi/mi/tcpserve/handle.go:51	read tcp 127.0.0.1:7898->127.0.0.1:51028: use of closed network connection
+xfschain2022/03/14 - 00:20:20.234	[33mwarn[0m	/Users/lanyuanbert/go/src/mi/mi/tcpserve/handle.go:51	read tcp 127.0.0.1:7898->127.0.0.1:51242: use of closed network connection
+xfschain2022/03/14 - 00:20:20.234	[33mwarn[0m	/Users/lanyuanbert/go/src/mi/mi/tcpserve/handle.go:51	read tcp 127.0.0.1:7898->127.0.0.1:51250: use of closed network connection
+xfschain2022/03/14 - 00:24:34.855	[33mwarn[0m	/Users/lanyuanbert/go/src/mi/mi/tcpserve/handle.go:57	Error 1062: Duplicate entry '898607B9102080239016' for key 'iccid'

@@ -3,6 +3,7 @@ package core
 import (
 	"fmt"
 	"mi/connectpool"
+	"mi/tcpserve"
 	"net"
 )
 
@@ -16,7 +17,6 @@ func tcpServer() {
 	}
 
 	// defer listener.Close()
-
 	pool := connectpool.NewPool(4)
 	go func(p *connectpool.Pool) {
 		for {
@@ -25,7 +25,8 @@ func tcpServer() {
 				fmt.Println("accept is error!")
 				return
 			}
-			go connectpool.Handle(conn, p)
+			handle := tcpserve.NewHandle()
+			go connectpool.Handle(handle, conn, p)
 		}
 	}(pool)
 

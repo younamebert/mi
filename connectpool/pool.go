@@ -66,8 +66,7 @@ func (p *Pool) Run() {
 	}
 }
 
-func Handle(conn net.Conn, pool *Pool) {
-	handle := tcpserve.NewHandle()
+func Handle(handle *tcpserve.Handle, conn net.Conn, pool *Pool) {
 	task := NewTask(handle.Process, conn)
 	pool.EntryChannel <- task
 }
